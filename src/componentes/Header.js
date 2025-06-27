@@ -1,28 +1,68 @@
 import React from "react";
 import styled from "styled-components";
+import Boton from "../elementos/Boton";
 
-const HeaderSection = styled.header`
-  background-color: #4f46e5;
-  color: white;
-  padding: 3rem 1rem;
-  text-align: center;
+const HeaderDiv = styled.div`
+  width: 100%;
+  padding: 2.5rem; /* 40px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 60rem) {
+    /* 950px */
+    justify-content: start;
+  }
 `;
 
-const Title = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+const Titulo = styled.h1`
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2.5rem; /* 40px */
+
+  @media (max-width: 60rem) {
+    /* 950px */
+    font-size: 2rem; /* 32px */
+  }
 `;
 
-const Subtitle = styled.p`
-  font-size: 1.2rem;
+const ContenedorHeader = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 60rem) {
+    /* 950px */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    & > div {
+      display: flex;
+      margin-bottom: 1.25rem; /* 20px */
+      justify-content: end;
+    }
+  }
+`;
+
+const ContenedorBotones = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 function Header() {
   return (
-    <HeaderSection>
-      <Title>Matías Rodríguez</Title>
-      <Subtitle>Desarrollador Front-End & Data Enthusiast</Subtitle>
-    </HeaderSection>
+    <HeaderDiv>
+      <ContenedorHeader>
+        <Titulo>Matías Rodríguez</Titulo>
+        <ContenedorBotones>
+          <Boton to="/">Sobre Mi</Boton>
+          <Boton to="/">Proyectos</Boton>
+          <Boton to="/">Contacto</Boton>
+        </ContenedorBotones>
+      </ContenedorHeader>
+    </HeaderDiv>
   );
 }
 
