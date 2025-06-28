@@ -27,7 +27,9 @@ function Contacto() {
     <ContactoSection>
       <Title>Contacto</Title>
       <p>¿Quieres trabajar conmigo? Escríbeme:</p>
-      <EmailLink href="mailto:matias@email.com">matias@email.com</EmailLink>
+      <EmailLink href="mailto:ma.antoniorodriguez@gmail.com">
+        ma.antoniorodriguez@gmail.com
+      </EmailLink>
     </ContactoSection>
   );
 }

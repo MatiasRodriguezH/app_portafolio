@@ -28,15 +28,14 @@ const ProjectLink = styled.a`
 
 const projectos = [
   {
-    title: "Outlier Detector Web",
+    title: "Sistema de Inventario",
     description:
-      "App que detecta valores atípicos en archivos CSV usando IQR y Z-score.",
+      "App para manejar el flujo de ventas e inventario de un almacén.",
     link: "https://github.com/tuusuario/outlier-detector",
   },
   {
-    title: "Dashboard de Ventas",
-    description:
-      "Dashboard en React con gráficas de ventas y detección de anomalías.",
+    title: "App de Gastos",
+    description: "Aplicación web para manejo de gastos.",
     link: "https://github.com/tuusuario/sales-dashboard",
   },
 ];

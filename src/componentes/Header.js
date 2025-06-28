@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Boton from "../elementos/Boton";
+import PerfilComponent from "../elementos/Perfil";
 
 const HeaderDiv = styled.div`
   width: 100%;
-  padding: 2.5rem; /* 40px */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background-color: #242221;
 
   @media (max-width: 60rem) {
     /* 950px */
@@ -15,19 +16,8 @@ const HeaderDiv = styled.div`
   }
 `;
 
-const Titulo = styled.h1`
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 2.5rem; /* 40px */
-
-  @media (max-width: 60rem) {
-    /* 950px */
-    font-size: 2rem; /* 32px */
-  }
-`;
-
 const ContenedorHeader = styled.div`
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 
@@ -48,6 +38,7 @@ const ContenedorHeader = styled.div`
 const ContenedorBotones = styled.div`
   display: flex;
   justify-content: space-between;
+  padding-left: 10rem;
   align-items: center;
 `;
 
@@ -55,7 +46,7 @@ function Header() {
   return (
     <HeaderDiv>
       <ContenedorHeader>
-        <Titulo>Matías Rodríguez</Titulo>
+        <PerfilComponent />
         <ContenedorBotones>
           <Boton to="/">Sobre Mi</Boton>
           <Boton to="/">Proyectos</Boton>

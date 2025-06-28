@@ -8,7 +8,9 @@ import ContextoProvider from "./contexto/Contexto";
 const Index = () => {
   return (
     <>
-      <Helmet></Helmet>
+      <Helmet>
+        <title>Porfolio</title>
+      </Helmet>
       <ContextoProvider>
         <BrowserRouter>
           <Routes>
