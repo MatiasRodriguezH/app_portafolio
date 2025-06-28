@@ -3,11 +3,13 @@ import styled from "styled-components";
 
 const Section = styled.section`
   padding: 2rem 1rem;
+  font-family: "Fira Sans";
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  font-family: "Fira Sans";
 `;
 
 const ProjectCard = styled.div`
@@ -18,7 +20,7 @@ const ProjectCard = styled.div`
 `;
 
 const ProjectLink = styled.a`
-  color: #4f46e5;
+  color: rgb(125, 120, 235);
   text-decoration: none;
 
   &:hover {
@@ -27,6 +29,28 @@ const ProjectLink = styled.a`
 `;
 
 const projectos = [
+  {
+    title: "Sistema de Inventario",
+    description:
+      "App para manejar el flujo de ventas e inventario de un almacén.",
+    link: "https://github.com/tuusuario/outlier-detector",
+  },
+  {
+    title: "App de Gastos",
+    description: "Aplicación web para manejo de gastos.",
+    link: "https://github.com/tuusuario/sales-dashboard",
+  },
+  {
+    title: "Sistema de Inventario",
+    description:
+      "App para manejar el flujo de ventas e inventario de un almacén.",
+    link: "https://github.com/tuusuario/outlier-detector",
+  },
+  {
+    title: "App de Gastos",
+    description: "Aplicación web para manejo de gastos.",
+    link: "https://github.com/tuusuario/sales-dashboard",
+  },
   {
     title: "Sistema de Inventario",
     description:

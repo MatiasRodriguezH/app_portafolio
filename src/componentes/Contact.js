@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ContactoSection = styled.section`
-  background: #f3f4f6;
+  background: #242221;
   padding: 2rem 1rem;
   text-align: center;
 `;

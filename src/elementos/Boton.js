@@ -5,7 +5,7 @@ const Boton = styled(Link)`
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  font-family: "Arial";
+  font-family: "Work Sans";
   color: #ffffff;
   font-size: 20px;
   background-color: transparent;

@@ -4,11 +4,13 @@ import Boton from "../elementos/Boton";
 import PerfilComponent from "../elementos/Perfil";
 
 const HeaderDiv = styled.div`
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #242221;
+  background-color: rgba(24, 24, 24, 0.4);
+  backdrop-filter: blur(5px);
 
   @media (max-width: 60rem) {
     /* 950px */

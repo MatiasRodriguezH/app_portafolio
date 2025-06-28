@@ -27,7 +27,7 @@ const PerfilInfo = styled.div`
 const PerfilNombre = styled.div`
   color: #e0e0e0;
   font-size: 20px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Work Sans";
 `;
 
 const PerfilTitle = styled.div`
