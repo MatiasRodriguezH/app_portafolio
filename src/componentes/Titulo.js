@@ -11,8 +11,11 @@ const TituloDiv = styled.div`
 `;
 
 const Nombre = styled.h1`
-  font-size: 45px;
+  color: rgb(244, 253, 113);
+  font-size: 65px;
   font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  margin: 0;
 `;
 
 const Subtitulo = styled.h1`
@@ -25,7 +28,7 @@ const Titulo = () => {
   return (
     <TituloDiv>
       <Nombre>Matías Rodríguez</Nombre>
-      <Subtitulo>Informático</Subtitulo>
+      <Subtitulo>Desarrollador Software</Subtitulo>
     </TituloDiv>
   );
 };

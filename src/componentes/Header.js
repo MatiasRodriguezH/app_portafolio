@@ -19,7 +19,7 @@ const HeaderDiv = styled.div`
 `;
 
 const ContenedorHeader = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 

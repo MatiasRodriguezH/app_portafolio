@@ -6,8 +6,10 @@ const Perfil = styled.div`
   display: flex;
   align-items: center;
   background-color: transparent;
-  padding: 1rem 1rem;
-  border-radius: 8px;
+  padding: 0.6rem 0.4rem 0.6rem 0.4rem;
+  margin: 0.4rem 0;
+  border-radius: 12px;
+  border: 1px solid white;
   width: fit-content;
 `;
 
