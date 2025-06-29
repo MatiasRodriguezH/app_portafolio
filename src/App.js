@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Cuerpo = styled.div`
-  padding: 2rem 25%;
+  padding: 0 25%;
 `;
 
 function App() {
