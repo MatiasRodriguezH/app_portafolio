@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Foto from "./../imagenes/foto.jpg";
 
 const TituloDiv = styled.div`
-  background-color: #272a33;
+  background-color: rgba(40, 49, 77, 0.4);
   padding: 12rem 18rem;
   display: flex;
   align-items: center;

@@ -12,11 +12,24 @@ const Title = styled.h2`
   font-family: "Fira Sans";
 `;
 
+const Projects = styled.div`
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
 const ProjectCard = styled.div`
   border: 1px solid #ddd;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
+  width: 90%;
+  height: 29rem;
 `;
 
 const ProjectLink = styled.a`
@@ -68,19 +81,21 @@ function Projectos() {
   return (
     <Section>
       <Title>Proyectos</Title>
-      {projectos.map((project, idx) => (
-        <ProjectCard key={idx}>
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <ProjectLink
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver en GitHub
-          </ProjectLink>
-        </ProjectCard>
-      ))}
+      <Projects>
+        {projectos.map((project, idx) => (
+          <ProjectCard key={idx}>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <ProjectLink
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver en GitHub
+            </ProjectLink>
+          </ProjectCard>
+        ))}
+      </Projects>
     </Section>
   );
 }
