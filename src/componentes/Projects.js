@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   font-family: "Fira Sans";
 `;
 
@@ -15,7 +15,6 @@ const Title = styled.h2`
 const Projects = styled.div`
   display: grid;
   max-width: 1500px;
-  margin: 0 auto;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   @media (max-width: 1400px) {

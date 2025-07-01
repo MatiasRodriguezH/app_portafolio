@@ -20,8 +20,8 @@ const Texto = styled.div`
   margin: 0;
   gap: 0.1rem;
 
-  h2,
-  h1 {
+  h2 {
+    font-size: 1.5rem;
     margin: 0;
     padding: 0;
   }
@@ -42,14 +42,16 @@ const Avatar = styled.img`
 
 const Nombre = styled.h1`
   color: rgb(244, 253, 113);
-  font-size: 65px;
+  font-size: 3.5rem;
   font-family: "Courier New", Courier, monospace;
   padding: 0;
   margin: 0;
 `;
 
 const Subtitulo = styled.h1`
-  font-size: 38px;
+  padding: 0;
+  margin: 0;
+  font-size: 2.3rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 `;

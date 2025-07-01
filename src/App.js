@@ -34,7 +34,7 @@ const FondoEstrellas = styled.div`
     background: radial-gradient(white 1px, transparent 2px);
     background-size: 50px 50px;
     animation: parpadeo 6s linear infinite;
-    opacity: 0.05;
+    opacity: 0.1;
   }
 
   @keyframes parpadeo {
