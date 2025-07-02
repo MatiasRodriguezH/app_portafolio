@@ -11,7 +11,7 @@ const HeaderDiv = styled.div`
   align-items: center;
   background-color: rgba(24, 24, 24, 0.4);
   backdrop-filter: blur(5px);
-
+  z-index: 10;
   @media (max-width: 60rem) {
     /* 950px */
     justify-content: start;
