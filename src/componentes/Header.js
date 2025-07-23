@@ -45,14 +45,22 @@ const ContenedorBotones = styled.div`
 `;
 
 function Header() {
+  const onClick = (e, id) => {
+    e.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <HeaderDiv>
       <ContenedorHeader>
         <PerfilComponent />
         <ContenedorBotones>
-          <Boton to="/">Sobre Mi</Boton>
-          <Boton to="/">Proyectos</Boton>
-          <Boton to="/">Contacto</Boton>
+          <Boton onClick={(e) => onClick(e, "sobre-mi")}>Sobre Mi</Boton>
+          <Boton onClick={(e) => onClick(e, "projectos")}>Proyectos</Boton>
+          <Boton onClick={(e) => onClick(e, "contacto")}>Contacto</Boton>
         </ContenedorBotones>
       </ContenedorHeader>
     </HeaderDiv>

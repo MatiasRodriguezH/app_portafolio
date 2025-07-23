@@ -62,9 +62,15 @@ function App() {
         <Header />
         <Titulo />
         <Cuerpo>
-          <SobreMi />
-          <Projects />
-          <Contact />
+          <section id="sobre-mi">
+            <SobreMi />
+          </section>
+          <section id="projectos">
+            <Projects />
+          </section>
+          <section id="contacto">
+            <Contact />
+          </section>
         </Cuerpo>
       </FondoEstrellas>
     </>

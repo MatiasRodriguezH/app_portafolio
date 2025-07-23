@@ -27,7 +27,6 @@ const Index = () => {
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="*" element={<NotFound />} />{" "}
-            {/* NotFound es un componente que debes crear */}
           </Routes>
         </Router>
       </ContextoProvider>

@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const Boton = styled(Link)`
+const Boton = styled.a`
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
