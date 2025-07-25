@@ -11,6 +11,7 @@ const TituloDiv = styled.div`
   flex-direction: center;
   z-index: 1;
   position: relative;
+  margin-bottom: -2rem;
 `;
 
 const Texto = styled.div`

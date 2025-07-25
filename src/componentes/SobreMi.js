@@ -4,6 +4,10 @@ import styled from "styled-components";
 const SobreMiDiv = styled.div`
   display: flex;
   flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: -3rem;
+  position: relative;
+  z-index: 2;
 `;
 
 const Titulo = styled.h1`

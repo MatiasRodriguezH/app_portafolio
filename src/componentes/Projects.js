@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  padding: 2rem 0;
+  padding: 3rem 0;
   font-family: "Fira Sans";
+  position: relative;
 `;
 
 const Title = styled.h2`
@@ -15,6 +16,7 @@ const Title = styled.h2`
 const Projects = styled.div`
   display: grid;
   max-width: 1500px;
+  padding: 0 1rem 0 1rem;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   @media (max-width: 1400px) {
@@ -42,37 +44,15 @@ const ProjectLink = styled.a`
 
 const projectos = [
   {
-    title: "Sistema de Inventario",
+    title: "Sistema de Inventario y Ventas",
     description:
       "App para manejar el flujo de ventas e inventario de un almacén.",
-    link: "https://github.com/tuusuario/outlier-detector",
+    link: "https://github.com/MatiasRodriguezH/Inventario",
   },
   {
     title: "App de Gastos",
     description: "Aplicación web para manejo de gastos.",
-    link: "https://github.com/tuusuario/sales-dashboard",
-  },
-  {
-    title: "Sistema de Inventario",
-    description:
-      "App para manejar el flujo de ventas e inventario de un almacén.",
-    link: "https://github.com/tuusuario/outlier-detector",
-  },
-  {
-    title: "App de Gastos",
-    description: "Aplicación web para manejo de gastos.",
-    link: "https://github.com/tuusuario/sales-dashboard",
-  },
-  {
-    title: "Sistema de Inventario",
-    description:
-      "App para manejar el flujo de ventas e inventario de un almacén.",
-    link: "https://github.com/tuusuario/outlier-detector",
-  },
-  {
-    title: "App de Gastos",
-    description: "Aplicación web para manejo de gastos.",
-    link: "https://github.com/tuusuario/sales-dashboard",
+    link: "https://github.com/MatiasRodriguezH/app_lista_gastos",
   },
 ];
 
