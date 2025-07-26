@@ -11,6 +11,12 @@ const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-family: "Fira Sans";
+  display: flex;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+  }
 `;
 
 const Projects = styled.div`

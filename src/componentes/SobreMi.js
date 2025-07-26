@@ -12,7 +12,13 @@ const SobreMiDiv = styled.div`
 
 const Titulo = styled.h1`
   font-family: "Work Sans", Courier, monospace;
+  display: flex;
   font-size: 35px;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+  }
 `;
 
 const Texto = styled.p`

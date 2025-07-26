@@ -12,6 +12,7 @@ const Boton = styled.a`
   margin: 0 0.2rem;
   text-decoration: none;
   overflow: hidden;
+  min-width: 90px;
 
   &::after {
     content: "";

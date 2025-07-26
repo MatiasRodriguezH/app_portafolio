@@ -11,6 +11,11 @@ const Perfil = styled.div`
   border-radius: 12px;
   border: 1px solid white;
   width: fit-content;
+  min-width: 230px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const Avatar = styled.img`

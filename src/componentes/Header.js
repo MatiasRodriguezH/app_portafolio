@@ -12,9 +12,9 @@ const HeaderDiv = styled.div`
   background-color: rgba(24, 24, 24, 0.4);
   backdrop-filter: blur(5px);
   z-index: 10;
-  @media (max-width: 60rem) {
+  @media (max-width: 1000px) {
     /* 950px */
-    justify-content: start;
+    justify-content: center;
   }
 `;
 
@@ -22,9 +22,9 @@ const ContenedorHeader = styled.div`
   width: 60%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  @media (max-width: 60rem) {
-    /* 950px */
+  @media (max-width: 1000px) {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -42,6 +42,21 @@ const ContenedorBotones = styled.div`
   justify-content: space-between;
   padding-left: 10rem;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    padding-top: 1rem;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+`;
+
+const PerfilDiv = styled.div`
+  display: contents;
+
+  @media (max-width: 1000px) {
+    display: none;
+    position: fixed;
+  }
 `;
 
 function Header() {
@@ -56,7 +71,9 @@ function Header() {
   return (
     <HeaderDiv>
       <ContenedorHeader>
-        <PerfilComponent />
+        <PerfilDiv>
+          <PerfilComponent />
+        </PerfilDiv>
         <ContenedorBotones>
           <Boton onClick={(e) => onClick(e, "sobre-mi")}>Sobre Mi</Boton>
           <Boton onClick={(e) => onClick(e, "projectos")}>Proyectos</Boton>

@@ -8,10 +8,15 @@ const TituloDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: center;
+  flex-direction: row;
   z-index: 1;
   position: relative;
   margin-bottom: -2rem;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 6rem 5%;
+  }
 `;
 
 const Texto = styled.div`
@@ -41,6 +46,11 @@ const Avatar = styled.img`
   border-radius: 50%;
   object-fit: cover;
   margin-right: 14px;
+  @media (max-width: 1000px) {
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+    width: 12rem;
+  }
 `;
 
 const Nombre = styled.h1`
@@ -57,6 +67,10 @@ const Subtitulo = styled.h1`
   font-size: 2.3rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  @media (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Acciones = styled.div`
