@@ -2,22 +2,40 @@ import React from "react";
 import styled from "styled-components";
 
 const SobreMiDiv = styled.div`
+  background-color: rgba(40, 49, 77, 0.4);
+  border-radius: 8px;
+  padding: 2rem 3rem;
+  margin: 3rem 0;
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: -3rem;
   position: relative;
   z-index: 2;
 `;
 
 const Titulo = styled.h1`
   font-family: "Work Sans", Courier, monospace;
-  display: flex;
   font-size: 35px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  align-self: flex-start;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: orange;
+  }
 
   @media (max-width: 1000px) {
-    justify-content: center;
-    border-bottom: 2px solid #ddd;
+    align-self: center;
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 `;
 

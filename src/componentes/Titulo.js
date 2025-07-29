@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Foto from "./../imagenes/foto.jpg";
 
@@ -67,9 +67,11 @@ const Subtitulo = styled.h1`
   font-size: 2.3rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-height: 3rem; /* Para evitar que el layout salte */
 
   @media (max-width: 1000px) {
     font-size: 1.5rem;
+    min-height: 2rem;
   }
 `;
 
@@ -125,12 +127,29 @@ const Redes = styled.div`
 `;
 
 const Titulo = () => {
+  const [subtitulo, setSubtitulo] = useState("");
+  const textoCompleto = "Desarrollador Software";
+
+  useEffect(() => {
+    let i = 0;
+    const escribir = () => {
+      if (i < textoCompleto.length) {
+        setSubtitulo(textoCompleto.substring(0, i + 1) + "_");
+        i++;
+        setTimeout(escribir, 150);
+      } else {
+        setSubtitulo(textoCompleto); //
+      }
+    };
+    escribir();
+  }, []);
+
   return (
     <TituloDiv>
       <Texto>
         <h2>¡Hola! Soy</h2>
         <Nombre>Matías Rodríguez</Nombre>
-        <Subtitulo>Desarrollador Software</Subtitulo>
+        <Subtitulo>{subtitulo}</Subtitulo>
         <Acciones>
           <BotonDescarga
             href={process.env.PUBLIC_URL + "/CV-Matias.pdf"}
