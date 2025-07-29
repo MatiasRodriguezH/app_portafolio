@@ -132,7 +132,10 @@ const Titulo = () => {
         <Nombre>Matías Rodríguez</Nombre>
         <Subtitulo>Desarrollador Software</Subtitulo>
         <Acciones>
-          <BotonDescarga href="/CV-Matias.pdf" download="CV-Matias.pdf">
+          <BotonDescarga
+            href={process.env.PUBLIC_URL + "/CV-Matias.pdf"}
+            download="CV-Matias.pdf"
+          >
             Descargar CV
           </BotonDescarga>
           <Redes>
