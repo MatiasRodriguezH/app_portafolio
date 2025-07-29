@@ -132,7 +132,7 @@ const Titulo = () => {
         <Nombre>Matías Rodríguez</Nombre>
         <Subtitulo>Desarrollador Software</Subtitulo>
         <Acciones>
-          <BotonDescarga href="/CV-Matias.pdf" download>
+          <BotonDescarga href="CV-Matias.pdf" download>
             Descargar CV
           </BotonDescarga>
           <Redes>
