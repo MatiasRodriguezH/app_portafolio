@@ -136,11 +136,12 @@ const Titulo = () => {
       if (i < textoCompleto.length) {
         setSubtitulo(textoCompleto.substring(0, i + 1) + "_");
         i++;
-        setTimeout(escribir, 150);
+        setTimeout(escribir, 50);
       } else {
         setSubtitulo(textoCompleto); //
       }
     };
+
     escribir();
   }, []);
 
